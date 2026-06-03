@@ -1,68 +1,98 @@
 .encabezado {
     text-align: center;
-    padding: 60px 20px;
+    padding: 50px 20px 30px;
 }
 
 .encabezado h1 {
-    font-size: 3rem;
-    margin-bottom: 15px;
+    color: var(--color-1);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 .encabezado p {
+    color: #555;
     max-width: 700px;
     margin: auto;
-    font-size: 1.1rem;
 }
 
-/* ===== TARJETAS ===== */
+
 
 .profesor-card {
     background-color: white;
-    border-radius: 12px;
-    padding: 20px;
-    text-align: center;
-    height: 100%;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
 
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 20px;
+
+    text-align: center;
+
+    height: 100%;
 }
+
+.profesor-card:hover {
+    border-color: var(--color-4);
+} 
 
 .profesor-card img {
     width: 100%;
-    max-height: 450px;
     height: auto;
 
-    border-radius: 10px;
+    max-height: 380px;
+
+    border-radius: 4px;
+
     margin-bottom: 15px;
 }
 
 .profesor-card h3 {
-    margin-bottom: 10px;
+    color: var(--color-1);
+    margin-bottom: 5px;
 }
 
 .profesor-card h4 {
-    color: #0d6efd;
-    margin-bottom: 10px;
+    color: var(--color-4);
+
+    font-size: 1rem;
+
+    margin-bottom: 12px;
 }
 
+.profesor-card p {
+    color: #555;
+    line-height: 1.5;
+}
 
 .info-box {
-    background-color: #f5f5f5;
-    padding: 30px;
+    background-color: white;
 
-    border-radius: 12px;
+    border: 1px solid #d9d9d9;
+
+    padding: 25px;
 
     height: 100%;
 }
 
 .info-box h2 {
+    color: var(--color-1);
+
+    border-bottom: 2px solid #bfbfbf;
+
+    padding-bottom: 10px;
+
     margin-bottom: 15px;
 }
 
-
-@media (max-width: 768px) {
-
-    .encabezado h1 {
-        font-size: 2rem;
-    }
-
+body {
+    font-family: var(--font-texto);
+    background-color: var(--color-5);
 }
+
+.profesores-section {
+    margin-bottom: 60px;
+}
+
+.mision-vision-section {
+    margin-bottom: 60px;
+}
+
