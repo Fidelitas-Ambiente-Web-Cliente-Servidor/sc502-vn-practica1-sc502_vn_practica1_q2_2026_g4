@@ -1,0 +1,152 @@
+:root{
+    --color-1: #171B5A; /*Color principal*/
+    --color-2: #0D0BEA; /*Color de botones principales o enlaces destacados*/
+    --color-3: #195974; /*Color Navbar o secciones secundarias*/
+    --color-4: #1A8AB8; /*Color de hover, acentos, iconos y detalles*/
+    --color-5: #F2F2F2; /*Color de fondo*/
+    --color-6: #9e9d9d; /*Color de fondo*/
+
+
+    --font-titulos: 'Poppins', sans-serif;
+    --font-texto: 'Nunito', sans-serif;
+}
+
+.navbar {
+    background-color: white;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.navbar-brand { /*Debe borrarse o modificarse porque aca va el logo*/
+    font-weight: 500;
+    color: var(--color-3);
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+.login-button {
+    background-color:var(--color-4);
+    color:var(--color-5);
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover {
+    background-color: var(--color-3);
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+    position: relative;
+}
+
+.nav-link {
+    color: var(--color-6);
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link:active{
+    color: var(--color-3)
+}
+
+@media (min-width:991px) { /*Esto es para que la pagina no haga el efecto cuando esta pequena, es decir con el menu contraido*/
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0%;
+        height: 2px;
+        background-color: var(--color-3);
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before,
+    .nav-link:active::before {
+        content: "";
+        width: 100%;
+        visibility: visible;
+    }
+
+    
+}
+
+body {
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.6),
+            rgba(0,0,0,0.6)
+        ),
+        url("https://images.unsplash.com/photo-1646682941137-8da21ec3cf40?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+        center center / cover no-repeat;
+
+    z-index: -1;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    color: white;
+    background-color: var(--color-4);
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer ul {
+    margin-bottom: 0%;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+footer li {
+    padding: 15px;
+    margin-bottom: 4px;
+}
+
+footer a {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+
+footer i {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+footer p {
+    text-align: center;
+}
