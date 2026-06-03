@@ -1,0 +1,58 @@
+header {
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 30px 10px;
+    margin-bottom: 20px;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.formulario-seccion, .info-seccion, .mapa-seccion {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.25rem;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    margin-top: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+iframe {
+    margin-top: 10px;
+}

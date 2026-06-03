@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Universidad</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="brand">Universidad</a>
+        <a href="index.html">Inicio</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="profesores.html">Profesores</a>
+        <a href="contacto.html" class="activo">Contacto</a>
+    </nav>
+
+    <header>
+        <h1>Contacto</h1>
+        <p>Página de contacto para consultas y matrículas.</p>
+    </header>
+
+    <main>
+        <div class="formulario-seccion">
+            <h2>Formulario de Contacto</h2>
+            <form action="#" method="POST" id="form-contacto">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                
+                <label for="asunto">Asunto</label>
+                <input type="text" id="asunto" name="asunto" required>
+                
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <div class="info-seccion">
+            <h2>Datos de contacto</h2>
+            <p><strong>Dirección:</strong> 150 metros oeste de la Rotonda de la Bandera, San Pedro, San José, Costa Rica</p>
+            <p><strong>Teléfono:</strong> 8888-4444</p>
+            <p><strong>Correo electrónico:</strong> contacto@universidad.ac.cr</p>
+        </div>
+
+        <div class="mapa-seccion">
+            <h2>Ubicación</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d474.9958304537762!2d-84.05325166837632!3d9.939490818931827!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2scr!4v1780507958790!5m2!1ses!2scr" 
+                width="100%" 
+                height="350" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Mapa de Ubicación">
+            </iframe>
+        </div>
+    </main>
+
+    <footer>
+        <p>Práctica 1 - Universidad</p>
+        <p>
+            Redes Sociales: 
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+
+</body>
+</html>
