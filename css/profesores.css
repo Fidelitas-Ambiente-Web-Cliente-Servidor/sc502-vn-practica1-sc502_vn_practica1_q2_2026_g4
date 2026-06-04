@@ -1,0 +1,98 @@
+.encabezado {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+.encabezado h1 {
+    color: var(--color-1);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.encabezado p {
+    color: #fffdfd;
+    max-width: 700px;
+    margin: auto;
+}
+
+
+
+.profesor-card {
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    height: 100%;
+}
+
+.profesor-card:hover {
+    border-color: var(--color-4);
+} 
+
+.profesor-card img {
+    width: 100%;
+    height: auto;
+
+    max-height: 380px;
+
+    border-radius: 4px;
+
+    margin-bottom: 15px;
+}
+
+.profesor-card h3 {
+    color: var(--color-1);
+    margin-bottom: 5px;
+}
+
+.profesor-card h4 {
+    color: var(--color-4);
+
+    font-size: 1rem;
+
+    margin-bottom: 12px;
+}
+
+.profesor-card p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.info-box {
+    background-color: white;
+
+    border: 1px solid #d9d9d9;
+
+    padding: 25px;
+
+    height: 100%;
+}
+
+.info-box h2 {
+    color: var(--color-1);
+
+    border-bottom: 2px solid #bfbfbf;
+
+    padding-bottom: 10px;
+
+    margin-bottom: 15px;
+}
+
+body {
+    font-family: var(--font-texto);
+    background-color: var(--color-5);
+}
+
+.profesores-section {
+    margin-bottom: 60px;
+}
+
+.mision-vision-section {
+    margin-bottom: 60px;
+}
+
