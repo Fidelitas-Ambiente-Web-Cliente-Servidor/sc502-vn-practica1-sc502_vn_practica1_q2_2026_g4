@@ -1,0 +1,117 @@
+.encabezado {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+.encabezado h1 {
+    color: var(--color-1);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.encabezado p {
+    color: #fffdfd;
+    max-width: 700px;
+    margin: auto;
+}
+
+body {
+    font-family: var(--font-texto);
+    background-color: var(--color-5);
+}
+
+.busqueda-section {
+    margin-bottom: 40px;
+}
+
+.busqueda-box {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+}
+
+.busqueda-box input {
+    border: 1px solid #bfbfbf;
+    padding: 12px;
+}
+
+.categoria-titulo {
+    color: var(--color-1);
+    margin-bottom: 25px;
+    border-bottom: 2px solid #bfbfbf;
+    padding-bottom: 10px;
+}
+
+.cursos-section {
+    margin-bottom: 60px;
+}
+
+.curso-card {
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    padding: 20px;
+    height: 100%;
+}
+
+.curso-card:hover {
+    border-color: var(--color-4);
+}
+
+.curso-card img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.curso-card h3 {
+    color: var(--color-1);
+    margin-bottom: 8px;
+}
+
+.curso-card h4 {
+    color: var(--color-4);
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+.curso-card p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.curso-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.curso-info span {
+    color: var(--color-3);
+}
+
+.curso-precio {
+    color: var(--color-4);
+}
+
+.curso-button {
+    display: inline-block;
+    margin-top: 18px;
+    background-color: var(--color-4);
+    color: white;
+    padding: 8px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.curso-button:hover {
+    background-color: var(--color-3);
+    color: white;
+}

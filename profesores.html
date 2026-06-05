@@ -1,171 +1,159 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
-    <head>
-            <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profesores</title>
-
-  
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UProgra</title>
+    <title>Profesores</title>
 
-    <!--Bootstrap CSS-->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/profesores.css">
 
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
-    <!--NAVBAR-->
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg fixed-top">
-        <!--navbar-expands-lg permite que el contenido se muestre cuando esta expandido-->
         <div class="container-fluid">
-            <a class="navbar-brand me-auto" href="#">
+            <a class="navbar-brand me-auto" href="index.html">
                 <img src="Recursos/img/logo.png" alt="Logo UProgra">
             </a>
 
-            
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
-                <!--Navbar contraido-->
+
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
 
-                <!--Cuerpo de navbar ya sea contraido o extendido-->
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#">Cursos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#">Profesores</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#">Contacto</a>
+                            <a class="nav-link mx-lg-2" href="index.html">Inicio</a>
                         </li>
 
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="cursos.html">Cursos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active mx-lg-2" aria-current="page" href="profesores.html">Profesores</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="contacto.html">Contacto</a>
+                        </li>
                     </ul>
                 </div>
             </div>
 
             <a href="#" class="login-button">Login</a>
 
-            <!--Boton de hamburguesa-->
-            <button class="navbar-toggler pe=0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar">
+            <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                aria-label="Abrir menú de navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
         </div>
     </nav>
 
-    <!--Contenido Global-->
-   <main>
+    <!-- CONTENIDO GLOBAL -->
+    <main>
+        <header class="encabezado">
+            <h1>Profesores</h1>
+            <p>Conoce a nuestros profesionales.</p>
+        </header>
 
+        <section class="container my-5 profesores-section">
+            <div class="row g-4">
 
-    <header class="encabezado">
-        <h1> Profesores </h1>
-        <p> Conoce a nuestros profesionales. </p>
-    </header>
+                <div class="col-md-6 col-lg-3">
+                    <div class="profesor-card">
+                        <img src="images/profesor1.jpg" alt="Profesora Laura Muñoz">
+                        <h3>Laura Muñoz</h3>
+                        <h4>Desarrollo Web</h4>
+                        <p>
+                            Especialista en HTML, CSS, JavaScript y React
+                            con más de 10 años de experiencia.
+                        </p>
+                    </div>
+                </div>
 
-  <section class="container my-5 profesores-section">
+                <div class="col-md-6 col-lg-3">
+                    <div class="profesor-card">
+                        <img src="images/profesor2.jpg" alt="Profesora Susana Rojas">
+                        <h3>Susana Rojas</h3>
+                        <h4>Inteligencia Artificial</h4>
+                        <p>
+                            Investigadora en Machine Learning y análisis
+                            de datos aplicados al mundo empresarial.
+                        </p>
+                    </div>
+                </div>
 
-    <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="profesor-card">
+                        <img src="images/profesor3.jpg" alt="Profesor Rolando Castro">
+                        <h3>Rolando Castro</h3>
+                        <h4>Bases de Datos</h4>
+                        <p>
+                            Experto en SQL, MySQL y modelado de bases
+                            de datos para proyectos empresariales.
+                        </p>
+                    </div>
+                </div>
 
-        <div class="col-md-6 col-lg-3">
-            <div class="profesor-card">
-                <img src="images/profesor1.jpg" alt="Profesor">
-                <h3>Laura Muñoz</h3>
-                <h4>Desarrollo Web</h4>
-                <p>
-                    Especialista en HTML, CSS, JavaScript y React
-                    con más de 10 años de experiencia.
-                </p>
+                <div class="col-md-6 col-lg-3">
+                    <div class="profesor-card">
+                        <img src="images/profesor4.jpg" alt="Profesor Daniel López">
+                        <h3>Daniel López</h3>
+                        <h4>Ciberseguridad</h4>
+                        <p>
+                            Profesional enfocado en protección de sistemas,
+                            auditorías y seguridad informática.
+                        </p>
+                    </div>
+                </div>
+
             </div>
-        </div>
+        </section>
 
-        <div class="col-md-6 col-lg-3">
-            <div class="profesor-card">
-                <img src="images/profesor2.jpg" alt="Profesor">
-                <h3>Susana Rojas</h3>
-                <h4>Inteligencia Artificial</h4>
-                <p>
-                    Investigadora en Machine Learning y análisis
-                    de datos aplicados al mundo empresarial.
-                </p>
+        <section class="container my-5 mision-vision-section">
+            <div class="row g-4">
+
+                <div class="col-md-6">
+                    <div class="info-box">
+                        <h2>Misión</h2>
+                        <p>
+                            Brindar una educación tecnológica de excelencia que
+                            permita a nuestros estudiantes desarrollar habilidades
+                            técnicas y profesionales para enfrentar los retos del
+                            mercado laboral actual.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="info-box">
+                        <h2>Visión</h2>
+                        <p>
+                            Ser una academia líder en formación tecnológica,
+                            reconocida por la calidad de sus programas académicos y
+                            el impacto positivo de sus egresados en la sociedad.
+                        </p>
+                    </div>
+                </div>
+
             </div>
-        </div>
+        </section>
+    </main>
 
-        <div class="col-md-6 col-lg-3">
-            <div class="profesor-card">
-                <img src="images/profesor3.jpg" alt="Profesor">
-                <h3>Rolando Castro</h3>
-                <h4>Bases de Datos</h4>
-                <p>
-                    Experto en SQL, MySQL y modelado de bases
-                    de datos para proyectos empresariales.
-                </p>
-            </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-            <div class="profesor-card">
-                <img src="images/profesor4.jpg" alt="Profesor">
-                <h3>Daniel López</h3>
-                <h4>Ciberseguridad</h4>
-                <p>
-                    Profesional enfocado en protección de sistemas,
-                    auditorías y seguridad informática.
-                </p>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-                    <section class="container my-5 mision-vision-section">
-                        <div class="row g-4">
-                            <div class="col-md-6">
-                                <div class="info-box">
-                                    <h2> Misión </h2>
-                                    <p>
-                                        Brindar una educación tecnológica de excelencia que
-                                        permita a nuestros estudiantes desarrollar habilidades
-                                        técnicas y profesionales para enfrentar los retos del 
-                                        mercado laboral actual
-                                        </p>
-                                        </div>
-                                        </div>
-                        <div class="col-md-6">
-                                <div class="info-box">
-                                    <h2> Visión </h2>
-                                    <p>
-                                        Ser una academia líder en formación tecnológica,
-                                        reconocida por la calidad de sus programas académicos y
-                                        el impacto positivo de sus egresados en la sociedad
-                                        </p>
-                                        </div>
-                                        </div>     
-                                        </div> 
-                                        </section>      
-   </main>
-
-    <!--FOOTER-->
+    <!-- FOOTER -->
     <footer>
         <div class="container">
             <ul class="d-flex flex-row">
@@ -176,19 +164,12 @@
             </ul>
 
             <ul class="d-flex flex-row">
-                <li>
-                    <i class="fab fa-youtube"></i>
-                </li>
-                <li>
-                    <i class="fab fa-twitter"></i>
-                </li>
-                <li>
-                    <i class="fab fa-instagram"></i>
-                </li>
-                <li>
-                    <i class="fab fa-facebook"></i>
-                </li>
+                <li><i class="fab fa-youtube"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-facebook"></i></li>
             </ul>
+
             <p>&copy; 2026 UProgra SA</p>
         </div>
     </footer>
@@ -199,7 +180,4 @@
         crossorigin="anonymous">
     </script>
 </body>
-
-
 </html>
-
