@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         mensaje: false
     };
 
+    // Valida que nombre tenga minimo 5 caracteres y solo letras o espacios
     function validarNombre() {
         const valor = nombreInput.value;
         let esLetra = true;
@@ -58,6 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
         actualizarBoton();
     }
 
+    // Valida que el correo cumpla con el formato usando expresion regular
     function validarEmail() {
         const valor = emailInput.value;
         const patronEmail = /^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,4}$/i;
@@ -78,6 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
         actualizarBoton();
     }
 
+    // Valida que telefono solo tenga digitos y una longitud de 8 caracteres
     function validarTelefono() {
         const valor = telefonoInput.value;
         let esNumero = true;
@@ -108,6 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
         actualizarBoton();
     }
 
+    // Valida que asunto no este vacio y minimo 3 caracteres
     function validarAsunto() {
         const valor = asuntoInput.value;
         if (valor == "") {
@@ -126,6 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
         actualizarBoton();
     }
 
+    // Valida que mensaje no este vacio y minimo 20 caracteres
     function validarMensaje() {
         const valor = mensajeInput.value;
         if (valor == "") {
@@ -144,6 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
         actualizarBoton();
     }
 
+    // Habilita boton de envio si todos los campos son validos
     function actualizarBoton() {
         if (estado.nombre && estado.email && estado.telefono && estado.asunto && estado.mensaje) {
             btnSubmit.disabled = false;
