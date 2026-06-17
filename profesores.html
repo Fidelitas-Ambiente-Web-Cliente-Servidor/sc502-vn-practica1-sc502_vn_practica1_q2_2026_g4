@@ -69,88 +69,74 @@
             <p>Conoce a nuestros profesionales.</p>
         </header>
 
-        <section class="container my-5 profesores-section">
-            <div class="row g-4">
+            <!-- Tarjetas generadas por JavaScript -->
+    <div class="container my-5">
 
-                <div class="col-md-6 col-lg-3">
-                    <div class="profesor-card">
-                        <img src="images/profesor1.jpg" alt="Profesora Laura Muñoz">
-                        <h3>Laura Muñoz</h3>
-                        <h4>Desarrollo Web</h4>
-                        <p>
-                            Especialista en HTML, CSS, JavaScript y React
-                            con más de 10 años de experiencia.
-                        </p>
-                    </div>
+        <div class="row g-4" id="listaProfesores">
+
+        </div>
+
+    </div>
+
+
+    <!-- Modal Bootstrap -->
+    <div class="modal fade"
+        id="profesorModal"
+        tabindex="-1"
+        aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title" id="modalNombre"></h5>
+
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal">
+                    </button>
+
                 </div>
 
-                <div class="col-md-6 col-lg-3">
-                    <div class="profesor-card">
-                        <img src="images/profesor2.jpg" alt="Profesora Susana Rojas">
-                        <h3>Susana Rojas</h3>
-                        <h4>Inteligencia Artificial</h4>
-                        <p>
-                            Investigadora en Machine Learning y análisis
-                            de datos aplicados al mundo empresarial.
-                        </p>
-                    </div>
-                </div>
+                <div class="modal-body text-center">
 
-                <div class="col-md-6 col-lg-3">
-                    <div class="profesor-card">
-                        <img src="images/profesor3.jpg" alt="Profesor Rolando Castro">
-                        <h3>Rolando Castro</h3>
-                        <h4>Bases de Datos</h4>
-                        <p>
-                            Experto en SQL, MySQL y modelado de bases
-                            de datos para proyectos empresariales.
-                        </p>
-                    </div>
-                </div>
+                    <img
+                        id="modalFoto"
+                        class="img-fluid mb-3"
+                        alt="Profesor">
 
-                <div class="col-md-6 col-lg-3">
-                    <div class="profesor-card">
-                        <img src="images/profesor4.jpg" alt="Profesor Daniel López">
-                        <h3>Daniel López</h3>
-                        <h4>Ciberseguridad</h4>
-                        <p>
-                            Profesional enfocado en protección de sistemas,
-                            auditorías y seguridad informática.
-                        </p>
-                    </div>
-                </div>
+                    <h4 id="modalEspecialidad"></h4>
 
-            </div>
-        </section>
+                    <p id="modalDescripcion"></p>
 
-        <section class="container my-5 mision-vision-section">
-            <div class="row g-4">
+                    <hr>
 
-                <div class="col-md-6">
-                    <div class="info-box">
-                        <h2>Misión</h2>
-                        <p>
-                            Brindar una educación tecnológica de excelencia que
-                            permita a nuestros estudiantes desarrollar habilidades
-                            técnicas y profesionales para enfrentar los retos del
-                            mercado laboral actual.
-                        </p>
-                    </div>
-                </div>
+                    <p>
 
-                <div class="col-md-6">
-                    <div class="info-box">
-                        <h2>Visión</h2>
-                        <p>
-                            Ser una academia líder en formación tecnológica,
-                            reconocida por la calidad de sus programas académicos y
-                            el impacto positivo de sus egresados en la sociedad.
-                        </p>
-                    </div>
+                        <strong>Correo:</strong>
+
+                        <span id="modalCorreo"></span>
+
+                    </p>
+
+                    <p>
+
+                        <strong>Cursos:</strong>
+
+                        <span id="modalCursos"></span>
+
+                    </p>
+
                 </div>
 
             </div>
-        </section>
+
+        </div>
+
+    </div>
     </main>
 
     <!-- FOOTER -->
@@ -179,5 +165,7 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous">
     </script>
+    //javascript 
+    <script src="js/profesores.js"></script>
 </body>
 </html>

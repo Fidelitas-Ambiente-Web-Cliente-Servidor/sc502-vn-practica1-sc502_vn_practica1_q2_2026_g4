@@ -96,3 +96,17 @@ body {
     margin-bottom: 60px;
 }
 
+.profesor-card{
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.profesor-card:hover{
+    transform:scale(1.03);
+}
+
+.modal-body img{
+    width:250px;
+    display:block;
+    margin:auto;
+}
