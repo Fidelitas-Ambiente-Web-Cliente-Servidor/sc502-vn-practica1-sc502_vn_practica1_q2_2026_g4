@@ -1,3 +1,18 @@
+/*
+==========================================================
+TAREA 2
+
+Este código se conserva comentado porque en la Tarea 3
+los cursos ahora se obtienen desde la base de datos
+utilizando la arquitectura MVC (PHP + MySQL).
+
+Será reutilizado en la Tarea 4 según las indicaciones
+de la profe.
+
+Autor: Eliver Salazar
+==========================================================
+
+
 // Array principal de cursos.
 // Cada objeto con info que se mostrará en las tarjetas.
 const cursos = [
