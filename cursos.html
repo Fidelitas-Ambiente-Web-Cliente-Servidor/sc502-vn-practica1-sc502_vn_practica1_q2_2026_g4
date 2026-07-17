@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -68,118 +69,35 @@
         <!-- BARRA DE BÚSQUEDA -->
         <section class="container busqueda-section">
             <div class="busqueda-box">
-                <input type="text" class="form-control" placeholder="Buscar curso por nombre o categoría...">
+                <input type="text" id="buscarCurso" class="form-control"
+                    placeholder="Buscar curso por nombre o descripción...">
             </div>
         </section>
 
-        <!-- CATEGORÍA 1 -->
-        <section class="container cursos-section">
-            <h2 class="categoria-titulo">Programación y Desarrollo Web</h2>
-
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="curso-card">
-                        <img src="images/html-css.jpg" alt="Curso HTML y CSS">
-                        <h3>HTML y CSS desde Cero</h3>
-                        <h4>Desarrollo Web</h4>
-                        <p>
-                            Aprende a crear páginas web modernas utilizando estructura HTML5 y estilos CSS3.
-                        </p>
-                        <div class="curso-info">
-                            <span>Duración: 6 semanas</span>
-                            <span class="curso-precio">₡45.000</span>
-                        </div>
-                        <a href="#" class="curso-button">Ver más</a>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="curso-card">
-                        <img src="images/javascript.jpg" alt="Curso JavaScript">
-                        <h3>JavaScript Básico</h3>
-                        <h4>Programación</h4>
-                        <p>
-                            Desarrolla lógica de programación y agrega interactividad a tus sitios web.
-                        </p>
-                        <div class="curso-info">
-                            <span>Duración: 8 semanas</span>
-                            <span class="curso-precio">₡55.000</span>
-                        </div>
-                        <a href="#" class="curso-button">Ver más</a>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="curso-card">
-                        <img src="images/react.jpg" alt="Curso React">
-                        <h3>Introducción a React</h3>
-                        <h4>Frontend</h4>
-                        <p>
-                            Crea interfaces dinámicas usando componentes, props y estados en React.
-                        </p>
-                        <div class="curso-info">
-                            <span>Duración: 10 semanas</span>
-                            <span class="curso-precio">₡75.000</span>
-                        </div>
-                        <a href="#" class="curso-button">Ver más</a>
-                    </div>
-                </div>
+        <!-- FILTROS POR CATEGORÍA -->
+        <section class="container filtros-section">
+            <div class="filtros-box">
+                <button class="filtro-btn active" data-categoria="Todos">Todos</button>
+                <button class="filtro-btn" data-categoria="Desarrollo Web">Desarrollo Web</button>
+                <button class="filtro-btn" data-categoria="Programación">Programación</button>
+                <button class="filtro-btn" data-categoria="Frontend">Frontend</button>
+                <button class="filtro-btn" data-categoria="Bases de Datos">Bases de Datos</button>
+                <button class="filtro-btn" data-categoria="Datos">Datos</button>
+                <button class="filtro-btn" data-categoria="Seguridad Informática">Seguridad Informática</button>
             </div>
         </section>
 
-        <!-- CATEGORÍA 2 -->
+        <!-- CATÁLOGO DE CURSOS -->
         <section class="container cursos-section">
-            <h2 class="categoria-titulo">Datos y Tecnología</h2>
+            <h2 class="categoria-titulo">Catálogo de Cursos</h2>
 
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="curso-card">
-                        <img src="images/sql.jpg" alt="Curso SQL">
-                        <h3>Bases de Datos SQL</h3>
-                        <h4>Bases de Datos</h4>
-                        <p>
-                            Aprende consultas, tablas, relaciones y fundamentos para administrar bases de datos.
-                        </p>
-                        <div class="curso-info">
-                            <span>Duración: 7 semanas</span>
-                            <span class="curso-precio">₡50.000</span>
-                        </div>
-                        <a href="#" class="curso-button">Ver más</a>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="curso-card">
-                        <img src="images/datos.jpg" alt="Curso análisis de datos">
-                        <h3>Análisis de Datos</h3>
-                        <h4>Datos</h4>
-                        <p>
-                            Interpreta información, crea reportes y toma decisiones basadas en datos.
-                        </p>
-                        <div class="curso-info">
-                            <span>Duración: 9 semanas</span>
-                            <span class="curso-precio">₡65.000</span>
-                        </div>
-                        <a href="#" class="curso-button">Ver más</a>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="curso-card">
-                        <img src="images/ciberseguridad.jpg" alt="Curso ciberseguridad">
-                        <h3>Fundamentos de Ciberseguridad</h3>
-                        <h4>Seguridad Informática</h4>
-                        <p>
-                            Conoce los principios básicos para proteger sistemas, redes e información.
-                        </p>
-                        <div class="curso-info">
-                            <span>Duración: 8 semanas</span>
-                            <span class="curso-precio">₡60.000</span>
-                        </div>
-                        <a href="#" class="curso-button">Ver más</a>
-                    </div>
-                </div>
+            <div id="contenedorCursos" class="row g-4">
+                <!-- Las tarjetas se cargan desde cursos.js -->
             </div>
+
+            <p id="mensajeSinResultados" class="mensaje-sin-resultados">
+                No se encontraron cursos con esa búsqueda.
+            </p>
         </section>
     </main>
 
@@ -206,8 +124,14 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+
+    <script src="js/cursos.js"></script>
 </body>
+
 </html>
