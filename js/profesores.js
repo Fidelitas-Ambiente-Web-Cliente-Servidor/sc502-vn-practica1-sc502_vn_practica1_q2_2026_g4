@@ -1,6 +1,6 @@
 //arreglo de profesores almacena info e imagenes
 
-const profesores = [ {
+/*const profesores = [ {
     nombre: "Laura Muñóz",
     especialidad:"Desarrollo Web",
     descripcion:"Especialista en HTML, CSS y JavaScript con más de 10 años de experiencia en desarrollo frontend.",
