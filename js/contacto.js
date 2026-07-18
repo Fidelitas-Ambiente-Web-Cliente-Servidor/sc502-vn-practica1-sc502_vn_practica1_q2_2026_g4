@@ -174,6 +174,8 @@ document.addEventListener("DOMContentLoaded", function () {
     mensajeInput.addEventListener("blur", validarMensaje);
 
     form.addEventListener("submit", function (event) {
+        // Tarea 3
+        /*
         event.preventDefault();
 
         exitoDiv.style.display = "block";
@@ -200,5 +202,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 exitoDiv.style.display = "none";
             }
         }, 5000);
+        */
     });
 });
